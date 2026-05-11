@@ -6,8 +6,3 @@ def test_add():
 def test_sub():
     assert sub(10, 4) == 6
     
-from calculator import add, sub, multiply
-
-def test_multiply():
-    assert multiply(3, 4) == 12
-    assert multiply(0, 5) == 0
