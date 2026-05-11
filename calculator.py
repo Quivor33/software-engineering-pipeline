@@ -1,27 +1,35 @@
 def add(a, b):
     return a + b
 
+
 def sub(a, b):
     return a - b
 
+
 def sqrt(a):
     return a ** 0.5
+
+
 def divide(a, b):
     try:
         return a / b
     except ZeroDivisionError:
         return "No es pot dividir per 0"
+
+
 def power(a, b):
     return a^b
-    
+
+
 def multiply(a, b):
     return a * b
+
 
 def ln(x, terms=100):
     """Logaritme natural utilitzant la sèrie de Taylor de ln((1+t)/(1-t))."""
     if x <= 0:
         raise ValueError("L'argument ha de ser positiu")
-    
+
     # Reducció: ln(x) = ln(m * 2^k) = ln(m) + k*ln(2)
     k = 0
     while x >= 2:
@@ -31,7 +39,8 @@ def ln(x, terms=100):
         x *= 2
         k -= 1
 
-    # Ara x ∈ [1, 2), utilitzem t = (x-1)/(x+1) i la sèrie ln(x) = 2*(t + t³/3 + t⁵/5 + ...)
+    # Ara x ∈ [1, 2), utilitzem t = (x-1)/(x+1) 
+    # i la sèrie ln(x) = 2*(t + t³/3 + t⁵/5 + ...)
     t = (x - 1) / (x + 1)
     t_sq = t * t
     term = t
