@@ -5,3 +5,7 @@ def test_add():
 
 def test_sub():
     assert sub(10, 4) == 6
+
+def test_power():
+    assert power(2, 2) == 4
+    assert power(2, 3) == 8
