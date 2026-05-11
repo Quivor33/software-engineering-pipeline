@@ -33,4 +33,3 @@ def test_log():
     assert abs(log(8, 2) - 3.0) < 1e-9
     assert abs(log(1, 5) - 0.0) < 1e-9
     assert abs(log(0.5, 2) - (-1.0)) < 1e-9
-    
