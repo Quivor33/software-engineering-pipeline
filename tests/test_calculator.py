@@ -1,4 +1,4 @@
-from calculator import add, sub, multiply, divide, power, log
+from calculator import add, sub, sqrt, multiply, power, divide, log
 
 def test_add():
     assert add(2, 3) == 5
@@ -6,6 +6,9 @@ def test_add():
 def test_sub():
     assert sub(10, 4) == 6
 
+
+def test_sqrt():
+    assert sqrt(4) == 2
 def test_divide():
     assert divide(12, 4) == 3
     assert divide(20, 2) == 10

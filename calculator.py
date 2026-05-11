@@ -4,6 +4,8 @@ def add(a, b):
 def sub(a, b):
     return a - b
 
+def sqrt(a):
+    return a ** 0.5
 def divide(a, b):
     try:
         return a / b
