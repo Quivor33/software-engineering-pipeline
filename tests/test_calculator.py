@@ -5,7 +5,7 @@ def test_add():
 
 def test_sub():
     assert sub(10, 4) == 6
-    
+
 from calculator import add, sub, multiply
 
 def test_multiply():
