@@ -18,7 +18,7 @@ def divide(a, b):
 
 
 def power(a, b):
-    return a^b
+    return a ^ b
 
 
 def multiply(a, b):
@@ -38,9 +38,6 @@ def ln(x, terms=100):
     while x < 1:
         x *= 2
         k -= 1
-
-    # Ara x ∈ [1, 2), utilitzem t = (x-1)/(x+1) 
-    # i la sèrie ln(x) = 2*(t + t³/3 + t⁵/5 + ...)
     t = (x - 1) / (x + 1)
     t_sq = t * t
     term = t
