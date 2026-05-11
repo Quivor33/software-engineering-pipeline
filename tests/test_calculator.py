@@ -1,12 +1,18 @@
-from calculator import add, sub, multiply, log
+from calculator import add, sub, multiply, divide, power, log
 
 def test_add():
     assert add(2, 3) == 5
 
 def test_sub():
     assert sub(10, 4) == 6
+
+def test_divide():
+    assert divide(12, 4) == 3
+    assert divide(20, 2) == 10
     
-from calculator import add, sub, multiply
+def test_power():
+    assert power(2, 2) == 4
+    assert power(2, 3) == 8
 
 def test_multiply():
     assert multiply(3, 4) == 12
